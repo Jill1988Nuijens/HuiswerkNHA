@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="NHA studie">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tandartsafspraak </title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1> TANDARTSPRAKTIJK KIESKEURIG </h1>
+        </header>
+
+        <main>
+            <section>
+                <h2> Over Tandartspraktijk KiesKeurig </h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices mattis elit, dapibus molestie
+                    est
+                    fermentum sed.
+                    Nunc porttitor libero hendrerit dolor sollicitudin, vitae faucibus lacus congue. Aenean nec
+                    ultricies elit, eu
+                    tempor arcu.
+                    Vivamus vitae accumsan odio. Curabitur fringilla nulla non interdum tempor. Vestibulum malesuada
+                    sagittis
+                    malesuada.
+                    Proin pharetra</p>
+            </section>
+            <figure>
+                <img src="../afbeeldingen/tand1.jpeg" alt="tandarts" width="300" height="200">
+                <img src="../afbeeldingen/tand2.jpeg" alt="controle" width="300" height="200">
+                <img src="../afbeeldingen/tand3.jpeg" alt="schoonmaken" width="300" height="200">
+            </figure>
+
+
+            <form id="contactform" action="https://formspree.io/f/mzbwzvkw" method="post">
+
+
+                <h2> Contactformulier </h2>
+
+                <fieldset>
+                    <legend>Persoonlijke Gegevens:</legend>
+
+                    <label for="naam">
+                        <b>Uw Naam</b>
+                    </label>
+                    <input id="naam" type="text" name="naam">
+                    <br>
+                    <br>
+
+
+
+                    <label for="adres">
+                        <b>Uw Adres</b>
+                    </label>
+                    <input id="adres" type="text" name="Adres" placeholder="straatnaam en huisnummer">
+                    <br>
+                    <br>
+
+
+
+                    <label for="postcode">
+                        <b>Uw Postcode</b>
+                    </label>
+                    <input id="postcode" type="text" name="postcode" placeholder="postcode">
+                    <br>
+                    <br>
+
+
+                    <label for="geboortedatum">
+                        <b>Uw Geboortedatum</b>
+                    </label>
+                    <input id="geboortedatum" type="date" name="geboortedatum" max="2080-12-31">
+                    <br>
+                    <br>
+
+
+                    <label for="geslacht">
+                        <b>Uw Geslacht</b>
+                    </label>
+                    <input type="radio" id="geslacht" name="geslacht" value="man" checked> Man
+                    <input type="radio" name="geslacht" value="vrouw">Vrouw
+                    <input type="radio" name="geslacht" value="anders">Anders
+                    <br>
+                    <br>
+
+
+
+                    <label for="telefoonnummer">
+                        <b>Uw telefoonnummer</b>
+                    </label>
+                    <input id="telefoonnummer" type="tel" name="telefoonnummer">
+
+                </fieldset>
+
+                <br>
+                <br>
+
+
+                <fieldset>
+                    <legend>Omschrijving Klachten</legend>
+                    <label for="klachten">
+                        <b> Waarvoor wilt u een afspraak maken? Selecteer minimaal 1 </b>
+                    </label>
+
+                    <input type="checkbox" id="klachten" name="klachten" value="ja">Gaatje
+                    <input type="checkbox" name="klachten" value="ja">Ontstoken tandvlees
+                    <input type="checkbox" name="klachten" value="ja">Afgebroken tand
+                    <input type="checkbox" name="klachten" value="ja">Controle
+                    <input type="checkbox" name="klachten" value="ja">Mondhygienist
+                    <input type="checkbox" name="klachten" value="ja">Anders
+
+                    <br>
+                    <br>
+
+
+
+                    <label for="file">
+                        <b>Upload een foto van de aangetaste tand (indien mogelijk)</b>
+                    </label>
+                    <input type="file" id="file" name="file" accept="image/jpg, image/png, image/jpeg" multiple>
+                    <br>
+                    <br>
+
+                </fieldset>
+                <br>
+                <br>
+
+
+                <fieldset>
+                    <legend>Aanvullende Informatie:</legend>
+                    <label for="bericht">
+                        <b>Aanvullende informatie</b>
+                    </label>
+                    <input id="bericht" maxlength="1500" placeholder="Omschrijving van de klachten etc">
+                    <br>
+                    <br>
+
+
+
+                    <label for="datum">
+                        <b>Gewenste datum</b>
+                    </label>
+                    <input type="date" id="datum" name="Datum" max="2080-12-31">
+                    <br>
+                    <br>
+
+                </fieldset>
+
+                <br>
+                <br>
+
+
+                <button type="submit" name="verzendknop"><strong>Verzend</strong></button>
+
+
+
+
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>

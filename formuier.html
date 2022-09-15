@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulier</title>
+</head>
+
+<body>
+    <form id="contactform" action="https://formspree.io/f/xyyvzppo" method="post">
+        <table width="900">
+            <tbody>
+                <h1> Inschrijvingsformulier </h1>
+                <fieldset>
+                    <legend>Persoonlijke Gegevens:</legend>
+                    <tr>
+                        <label for="naam">
+                            <td><b>Uw Naam</b></td>
+                        </label>
+                        <td><input type="text" name="naam"></td>
+                    </tr>
+
+                    <tr>
+                        <label for="adres">
+                            <td><b>Uw adres</b></td>
+                        </label>
+                        <td><input type="text" name="adres" placeholder="Straatnaam en huisnummer"></td>
+                    </tr>
+
+                    <tr>
+                        <label for="postcode">
+                            <td><b>Uw postcode</b></td>
+                        </label>
+                        <td><input type="text" name="postcode" placeholder="Postcode"></td>
+                    </tr>
+
+                    <tr><label for="leeftijd">
+                            <td><b>Uw leeftijd</b></td>
+                        </label>
+                        <td> <input type="number" name="leeftijd" min="1" max="100"></td>
+                    </tr>
+                </fieldset>
+                <tr><label for="wachtwoord">
+                        <td><b>Uw wachtwoord</b></td>
+                    </label>
+                    <td> <input type="password" name="wachtwoord" placeholder="wachtwoord"></td>
+                </tr>
+
+                <tr><label for="email">
+                        <td><b>Uw Email adres</b></td>
+                    </label>
+                    <td> <input type="email" name="emailadres"></td>
+                </tr>
+
+
+                <tr><label for="telefoonnummer">
+                        <td><b>Uw telefoonnummer</b></td>
+                    </label>
+                    <td> <input type="tel" name="telefoonnummer"></td>
+                </tr>
+
+                <tr><label for="geboortedatum">
+                        <td><b>Uw geboortedatum</b></td>
+                    </label>
+                    <td> <input type="date" name="geboortedatum" max="2080-12-31"></td>
+                </tr>
+
+                <tr><label for="geslacht">
+                        <td><b>Uw Geslacht</b></td>
+                    </label>
+                    <td><input type="radio" name="geslacht" value="man" checked> Man
+                        <input type="radio" name="geslacht" value="vrouw">Vrouw
+                        <input type="radio" name="geslacht" value="anders">Anders
+                    </td>
+                </tr>
+
+                <tr><label for="file">
+                        <td><b>Upload uw foto</b></td>
+                    </label>
+                    <td><input type="file" name="file" accept="jpg png" multiple="1"></td>
+                </tr>
+
+                <tr><label for="opleiding">
+                        <td><b>Selecteer uw hoogst genoten opleiding</b></td>
+                    </label>
+                    <td><select name="opleiding">
+                            <option value="MBO">MBO</option>
+                            <option value="HBO">HBO</option>
+                            <option value="Universitair">Universitair</option>
+                            <option value="Anders">Anders</option>
+                        </select></td>
+                </tr>
+
+                <tr><label for="gewenste opleiding">
+                        <td><b>Uw gewenste opleiding</b></td>
+                    </label>
+                    <td><input type="radio" name="Python" value="Phyton" checked> Phyton
+                        <input type="radio" name="HTML" value="HTML">HTML
+                        <input type="radio" name="CSS" value="CSS">CSS
+                    </td>
+                </tr>
+
+                <tr><label for="startdatum">
+                        <td><b>Startdatum</b></td>
+                    </label>
+                    <td> <input type="date" name="startdatum" max="2080-12-31"></td>
+                </tr>
+
+
+
+                <tr><label for="bericht">
+                        <td><b>Schrijf uw bericht</b></td>
+                    </label>
+                    <td><textarea name="bericht" maxlength="1500"></textarea></td>
+                </tr>
+
+
+
+                <td>&nbsp;</td>
+                <td><button type="submit" name="verzendknop"><strong>Verzend</strong></button></td>
+
+
+
+            </tbody>
+        </table>
+
+    </form>
+</body>
+
+</html>
